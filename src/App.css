@@ -1,3 +1,4 @@
+/* The rest of your site stays centered */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -10,13 +11,20 @@
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em black);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Full-width responsive header */
+.header {
+  font-size: clamp(2rem, 5vw, 6rem);  /* scales between 2rem and 6rem */
+  text-align: left;
+  margin: 0;          /* remove default margins */
+  padding: 0 2vw;     /* optional horizontal padding relative to viewport */
+  width: 100vw;       /* full width of viewport */
+  box-sizing: border-box;  /* include padding in width */
 }

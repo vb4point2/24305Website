@@ -5,7 +5,10 @@ function App() {
 
   return (
     <>
-      <div>
+        <div>
+            <header className="header">Renton Octonauts</header>
+        </div>
+      <div id="root">
         <a href="#">
           <img src={octoLogo} className="logo" alt="Octonauts Logo logo" />
         </a>
