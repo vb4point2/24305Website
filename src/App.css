@@ -1,9 +1,11 @@
-/* The rest of your site stays centered */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Inter", sans-serif;
 }
 
 .logo {
@@ -19,12 +21,48 @@
   filter: drop-shadow(0 0 2em black);
 }
 
-/* Full-width responsive header */
-.header {
+.title {
   font-size: clamp(2rem, 5vw, 6rem);  /* scales between 2rem and 6rem */
   text-align: left;
   margin: 0;          /* remove default margins */
-  padding: 0 2vw;     /* optional horizontal padding relative to viewport */
+  padding: -1 2vw;     /* horizontal padding relative to viewport */
   width: 100vw;       /* full width of viewport */
   box-sizing: border-box;  /* include padding in width */
+}
+
+.shop, .info {
+  display: flex;         /* Modern layout alternative */
+  align-items: center;   /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  width: 150px;          /* Defined width */
+  height: 80px;          /* Defined height */
+  border: 2px solid white;
+  color: white;
+  border-radius: 10px;
+}
+
+.shop {
+  margin-right: 50px;
+  margin-top: 0px;
+}
+
+
+
+.shop:hover, .info:hover {
+  color: #d7d7d751;
+  border-color: #d7d7d751;
+}
+
+.header {
+  display: flex;
+  gap: 0px;
+}
+
+.info {
+  width: 50px;          /* Defined width */
+  height: 80px;          /* Defined height */
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
