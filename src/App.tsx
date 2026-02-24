@@ -1,3 +1,4 @@
+import { Routes, Route } from 'react-router-dom'
 import octoLogo from './assets/octonautslogo.png'
 import './App.css'
 
@@ -7,7 +8,7 @@ function App() {
     <>
       <div className='header'>
         <h1 className='title'>Renton Octonauts</h1>
-        <a href="#" className='shop'><h2>Shop</h2></a>
+        <a href="Shop.tsx" className='shop'><h2>Shop</h2></a>
         <a href="#"><h2 className='info'>i</h2></a>
       </div>
       <div id="root">
@@ -18,6 +19,10 @@ function App() {
       <div>
         {/* <a href="#" className='shop'><h2>Shop</h2></a> */}
       </div>
+        <Routes>
+            <Route path="/" element={<div>Home Page</div>} />
+            <Route path="/shop" element={<Shop />} />
+        </Routes>
     </>
   )
 }

@@ -22,12 +22,15 @@
 }
 
 .title {
-  font-size: clamp(2rem, 5vw, 6rem);  /* scales between 2rem and 6rem */
+  font-size: clamp(2rem, 5vw, 6rem); /* scales between 2rem and 6rem */
   text-align: left;
-  margin: 0;          /* remove default margins */
-  padding: -1 2vw;     /* horizontal padding relative to viewport */
-  width: 100vw;       /* full width of viewport */
-  box-sizing: border-box;  /* include padding in width */
+  margin: 0; /* remove default margins */
+  padding: 0 2vw; /* horizontal padding relative to viewport */
+  width: 100vw; /* full width of viewport */
+  box-sizing: border-box; /* include padding in width */
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
 }
 
 .shop, .info {
@@ -43,7 +46,10 @@
 
 .shop {
   margin-right: 50px;
-  margin-top: 0px;
+  margin-top: 0;
+  position: absolute;
+  top: 1.6rem;
+  right: 10rem;
 }
 
 
@@ -54,8 +60,9 @@
 }
 
 .header {
+  padding: 0;
   display: flex;
-  gap: 0px;
+  gap: 0;
 }
 
 .info {
@@ -64,5 +71,5 @@
   font-size: 2rem;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 3rem;
 }
