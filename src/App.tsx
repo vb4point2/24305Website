@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
 import octoLogo from './assets/octonautslogo.png'
 import './App.css'
+import Shop from "./Shop"
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       </div>
         <Routes>
             <Route path="/" element={<div>Home Page</div>} />
-            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop" element={<Shop/>} />
         </Routes>
     </>
   )
