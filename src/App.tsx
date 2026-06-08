@@ -1,29 +1,25 @@
-import { Routes, Route } from 'react-router-dom'
 import octoLogo from './assets/octonautslogo.png'
+import shopLogo from './assets/Shopping cart.svg'
+import hamburg from './assets/Menu.svg'
 import './App.css'
-import Shop from "./Shop"
 
 function App() {
 
   return (
     <>
       <div className='header'>
-        <h1 className='title'>Renton Octonauts</h1>
-        <a href="Shop.tsx" className='shop'><h2>Shop</h2></a>
-        <a href="#"><h2 className='info'>i</h2></a>
+        <h1>Renton Octonauts</h1>
+          <a href="#"><img src={shopLogo} alt="Shopping cart logo"/></a>
+          <a href="#"><img src={hamburg} alt="hamburger menu"/></a>
       </div>
       <div id="root">
         <a href="#">
-          <img src={octoLogo} className="logo" alt="Octonauts Logo logo" />
+          <img src={octoLogo} alt="Octonauts Logo logo" />
         </a>
       </div>
       <div>
         {/* <a href="#" className='shop'><h2>Shop</h2></a> */}
       </div>
-        <Routes>
-            <Route path="/" element={<div>Home Page</div>} />
-            <Route path="/shop" element={<Shop/>} />
-        </Routes>
     </>
   )
 }
