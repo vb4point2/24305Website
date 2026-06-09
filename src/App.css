@@ -1,75 +1,70 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 
-/*#root {*/
-/*  max-width: 1280px;*/
-/*  margin: 0 auto;*/
-/*  padding: 2rem;*/
-/*  text-align: center;*/
-/*  font-family: "Inria Sans", sans-serif;*/
-/*}*/
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Inria Sans", sans-serif;
+}
 
-/*.logo {*/
-/*  height: 50em;*/
-/*  padding: 1.5em;*/
-/*  will-change: filter;*/
-/*  transition: filter 300ms;*/
-/*  max-width: 1280px;*/
-/*  margin: 0 auto;*/
-/*  text-align: center;*/
-/*}*/
-/*.logo:hover {*/
-/*  filter: drop-shadow(0 0 2em black);*/
-/*}*/
+.logo {
+  height: 50em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em black);
+}
 
-/*.title {*/
-/*  font-size: clamp(2rem, 5vw, 6rem); !* scales between 2rem and 6rem *!*/
-/*  text-align: left;*/
-/*  margin: 0; !* remove default margins *!*/
-/*  padding: 0 2vw; !* horizontal padding relative to viewport *!*/
-/*  width: 100vw; !* full width of viewport *!*/
-/*  box-sizing: border-box; !* include padding in width *!*/
-/*  position: absolute;*/
-/*  left: 0;*/
-/*  top: 1.5rem;*/
-/*}*/
+.title {
+  font-size: clamp(2rem, 5vw, 6rem);
+  text-align: left;
+  margin: 0;
+  padding: 0 2vw;
+  width: 100vw;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 1.5rem;
+}
 
-/*.shop, .info {*/
-/*  display: flex;         !* Modern layout alternative *!*/
-/*  align-items: center;   !* Centers content vertically *!*/
-/*  justify-content: center; !* Centers content horizontally *!*/
-/*  width: 150px;          !* Defined width *!*/
-/*  height: 80px;          !* Defined height *!*/
-/*  border: 2px solid white;*/
-/*  color: white;*/
-/*  border-radius: 10px;*/
-/*}*/
+.shop, .info {
+  display: flex;         /* Modern layout alternative */
+  align-items: center;   /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  width: 60px;          /* Defined width */
+  height: 60px;          /* Defined height */
+    margin-right: 50px;
+    margin-top: 0;
+    position: absolute;
+}
 
-/*.shop {*/
-/*  margin-right: 50px;*/
-/*  margin-top: 0;*/
-/*  position: absolute;*/
-/*  top: 1.6rem;*/
-/*  right: 10rem;*/
-/*}*/
+.shop {
+    top: 2.7rem;
+    right: 10rem;
+}
 
 
 
-/*.shop:hover, .info:hover {*/
-/*  color: #d7d7d751;*/
-/*  border-color: #d7d7d751;*/
-/*}*/
+.shop:hover, .info:hover {
+  color: #d7d7d751;
+  border-color: #d7d7d751;
+}
 
-/*.header {*/
-/*  padding: 0;*/
-/*  display: flex;*/
-/*  gap: 0;*/
-/*}*/
+.header {
+  padding: 0;
+  display: flex;
+  gap: 0;
+}
 
-/*.info {*/
-/*  width: 50px;          !* Defined width *!*/
-/*  height: 80px;          !* Defined height *!*/
-/*  font-size: 2rem;*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  right: 3rem;*/
-/*}*/
+.info {
+    right: -2.4rem;
+    top: -0.01rem;
+    width: 150px;
+    height: 150px;
+}
